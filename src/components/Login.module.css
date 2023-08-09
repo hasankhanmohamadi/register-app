@@ -1,0 +1,92 @@
+@font-face {
+  font-family: 'IRANSANS';
+  src: local('IRANSANS'), url (./font/IRANSANS.woff)format('woff');
+}
+.bg {
+  background-image: url('./image/bg-login.jpg');
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  filter: blur(5px);
+}
+.body {
+  color: #4A4A4A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  width: 350px;
+  position: relative;
+}
+form .form_field::before {
+  font-size: 20px;
+  position: absolute;
+  left: 15px;
+  top: 17px;
+  color: #888888;
+  content: " ";
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+form .form_field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  position: relative;
+}
+form .form_control{
+  font-family: "IRANSANS";
+  color: #333;
+  font-size: 13px;
+  border: 1px solid #000;
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 10px;
+  background: none;
+}
+::placeholder{
+  color: #626161;
+  text-align: center;
+}
+form .btn {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  padding: 8px 30px;
+  text-align: center;
+  background-color: #47AB11;
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  font-size: 17px;
+}
+form .back_signup{
+  color: #000;
+  text-decoration: none;
+}
+.errors{
+  position: absolute;
+  margin: 10px 20px -51px 16px;
+  font-size: 10px;
+  color: #d51b1b;
+}
